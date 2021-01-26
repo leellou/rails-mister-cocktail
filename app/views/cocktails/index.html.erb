@@ -1,0 +1,111 @@
+<!-- -- -- -- -- navbar -- -- -- --  -->
+
+<div class="top-navbar d-flex justify-content-between align-items-center">
+  <div class="top-navbar-item p-3">
+    <i class="fas fa-heart"></i>
+  </div>
+  <div class="top-navbar-item p-3">
+      <form class="">
+        <input class="form-control" type="search" placeholder="Search cocktail">
+
+      </form>
+  </div>
+</div>
+<!-- -- -- -- -- banner -- -- -- --  -->
+
+<div class="banner">
+    <div class="banner-message">
+        <i class="fas fa-heart"></i>
+        <h2>Mix & Match is our business</h2>
+        <div class="home-banner-btn">
+          <%= link_to 'Add Cocktail', new_cocktail_path(@cocktail), class: "btn btn-warning", style: "width: 100%" %>
+        </div>
+    </div>
+</div>
+
+<!-- -- -- -- -- section texte -- -- -- --  -->
+
+<div class="banner-bottom-text">
+  <h5>Avec notre mojito aux fraises</h5>
+  <p>C'est l'été toute l'année</p>
+  <button class="btn btn-warning">Voir la recette</button>
+</div >
+
+<!-- -- -- -- -- cards cocktails -- -- -- --  -->
+
+<div class="container">
+
+  <h3>Recettes du moment</h3>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://images.unsplash.com/photo-1604321114353-45f97ea18d31?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5><%= cocktail.name %></h5>
+            <%= link_to "See details", cocktail_path(cocktail), class: "btn btn-warning m-2"%>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- -- -- -- -- section texte -- -- -- --  -->
+
+<div class="section-bottom-text">
+  <p>Notre rêve? simplifier vos moment cocktail,<br>
+  avec ou sans alcool</p>
+  <button class="btn btn-warning">Découvrir notre histoire</button>
+</div>
+
+<!-- -- -- -- -- newsletter -- -- -- --  -->
+
+<div class="section-newsletter">
+  <div class="container">
+    <h5>Abonne toi à notre newsletter</h5>
+    <div class="row m-4">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col">
+        <input type="submit" class="form-control">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -- -- -- -- footer -- -- -- --  -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-list d-flex justify-content-between">
+      <div class="footer-apropos">
+        <h5>A propos</h5>
+        <ul>
+          <li>notre compagnie</li>
+          <li>notre équipe</li>
+          <li>trouver un point de vente</li>
+          <li>valeurs nutritives</li>
+        </ul>
+      </div>
+      <div class="footer-aide">
+        <h5>aide et support</h5>
+        <ul>
+          <li>tel: (418) 204-2544</li>
+          <li>sans frais: 1-(833)-519-5925</li>
+          <li>nous joindre</li>
+        </ul>
+      </div>
+      <div class="footer-politique">
+        <h5>politiques</h5>
+        <ul>
+          <li>politique de confidentialité</li>
+          <li>conditions d'utilisations</li>
+          <li>politique verte</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

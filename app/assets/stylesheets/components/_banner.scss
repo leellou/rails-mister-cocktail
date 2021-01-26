@@ -1,0 +1,65 @@
+
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1586654860233-1b7177e1162d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+
+    i{
+      color: white;
+      font-size: 40px;
+      text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom: 24px;
+  }
+    h2{
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-weight: regular;
+      font-size: 48px;
+
+      text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom: 24px;
+    }
+
+    .banner-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+  }
+}
+
+
+.home-banner-btn{
+  display: flex;
+
+  .btn {
+    margin: 24px;
+    padding: 8px 62px;
+    background-color: #9AD0C0;
+    border: none;
+  }
+}
+
+.banner-bottom-info{
+  text-align: center;
+  margin: 80px 0;
+
+  h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: regular;
+    text-transform: uppercase;
+    font-size: 48px;
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: regular;
+    text-transform: uppercase;
+    font-size: 32px;
+  }
+}
